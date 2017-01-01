@@ -1,7 +1,6 @@
 import React from 'react';
-import {render} from 'react-dom';
-import { BrowserRouter, Match, Miss} from 'react-router';
-
+import { render } from 'react-dom';
+import { BrowserRouter, Match, Miss } from 'react-router';
 
 import './css/style.css';
 import App from './components/App';
@@ -17,9 +16,7 @@ const Root = () => {
         <Miss component={NotFound} />
       </div>
     </BrowserRouter>
-    )
+  )
 }
 
-
-
-render( < App / > , document.querySelector('#main'));
+render(<Root/>, document.querySelector('#main'));
